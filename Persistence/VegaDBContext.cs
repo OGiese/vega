@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using vega.Models;
 
 namespace Vega.Persistence
 {
@@ -10,5 +11,6 @@ namespace Vega.Persistence
             
         }
         
+        public DbSet<Make> Makes { get; set; }
     }
 }
